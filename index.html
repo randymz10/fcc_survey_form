@@ -15,9 +15,9 @@
   </head>
   <body class="bg-dark text-white">
     <div class="container">
-        <!--Header-->
+        <!--Start Header-->
       <header>
-        <h1 id="title" class="text-center m-5">Title for the form</h1>
+        <h1 id="title" class="text-center m-5">Title of the form</h1>
         <p id="description" class="mb-5 text-center">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officiis
           pariatur, officia hic vero distinctio dignissimos dolorum blanditiis
@@ -25,16 +25,15 @@
           perspiciatis qui minus!
         </p>
       </header>
-      <!--finish header-->
+      <!--Finish header-->
       
       <!--Start Form-->
       <form action="" id="survey-form">
-        
-        <div class="row mb-3 align-items-center">
-            <div class="col text-ali">
+
+        <!--Name Form-->
+        <div class="row mb-3">
+            <div class="col">
                 <label class="form-label" for="name" id="name-label">Name:</label>
-            </div>
-            <div class="col-sm-11">
                 <input
                   class="form-control"
                   type="text"
@@ -46,67 +45,104 @@
             </div>
         </div>
 
+        <!--Email form-->
+        <div class="row mb-3">
+          <div class="col">
+            <label class="form-label"  for="email" id="email-label">E-mail:</label>
+            <input
+              class="form-control"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="example@example.com"
+              required
+            />
+          </div>
+        </div>
+        <!--Number Form-->
+        <div class="row mb-3">
+          <div class="col-2">
+            <label class="form-label" for="number" id="number-label">Age:</label>
+            <input
+            class="form-control"
+              type="number"
+              name="Age"
+              id="number"
+              min="1"
+              max="99"
+              placeholder="age"
+            />
+          </div>
+        </div>
+        <!--Role-->
+        <div class="row mt-4 mb-4">
+          <div class="col-6">
+            <select name="role" id="dropdown">
+              <option disabled selected value>Select current role</option>
+              <option value="studet">Student</option>
+              <option value="job">Full Time Job</option>
+              <option value="learner">Full Time Learned</option>
+              <option value="preferNo">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
 
-        <label for="email" id="email-label">E-mail:</label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="example@example.com"
-          required
-        />
+        <!--Radio and checkboxes-->
 
-        <label for="number" id="number-label">Number:</label>
-        <input
-          type="number"
-          name="Age"
-          id="number"
-          min="1"
-          max="99"
-          placeholder="age"
-        />
+        <div class="row mb-3">
+          <!--Radio buttons-->
+          <div class="col-6">
+            <p>Chose a number</p>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="choseNumber" value="1" />
+              <label class="form-check-label" for="choseNumber">1</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="choseNumber" value="2" />
+              <label class="form-check-label" for="choseNumber">2</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="choseNumber" value="3" />
+              <label class="form-check-label" for="choseNumber">3</label>
+            </div>
+          </div>
 
-        <select name="role" id="dropdown">
-          <option disabled selected value>Select current role</option>
-          <option value="studet">Student</option>
-          <option value="job">Full Time Job</option>
-          <option value="learner">Full Time Learned</option>
-          <option value="preferNo">Prefer not to say</option>
-          <option value="other">Other</option>
-        </select>
+          <!--Checkboxes-->
+          <div class="col-6">
+            <p>Chose a other number</p>
+            <div class="form-check">
+              <input class="form-checl-input" type="checkbox" name="numberCheck" value="1" />
+              <label class="form-check-label" for="numberCheck">1</label>
+            </div>
+            <div class="form-check">
+              <input class="form-checl-input" type="checkbox" name="numberCheck" value="2" />
+              <label class="form-check-label" for="numberCheck">2</label>
+            </div>
+            <div class="form-check">
+              <input class="form-checl-input" type="checkbox" name="numberCheck" value="3" />
+              <label class="form-check-label" for="numberCheck">3</label>
+            </div>
+          </div>
+        </div>
+        <!--Comments-->
 
-        <p>Chose a number</p>
-
-        <input type="radio" name="choseNumber" value="1" />
-        <label for="choseNumber">1</label>
-
-        <input type="radio" name="choseNumber" value="2" />
-        <label for="choseNumber">2</label>
-
-        <input type="radio" name="choseNumber" value="3" />
-        <label for="choseNumber">3</label>
-
-        <p>Chose a other number</p>
-
-        <input type="checkbox" name="numberCheck" value="1" />
-        <label for="numberCheck">1</label>
-
-        <input type="checkbox" name="numberCheck" value="2" />
-        <label for="numberCheck">2</label>
-
-        <input type="checkbox" name="numberCheck" value="3" />
-        <label for="numberCheck">3</label>
-
-        <p>Do you have any comments?</p>
-        <textarea
-          name="commet"
-          id="Commet"
-          cols="30"
-          rows="10"
-          placeholder="Enter your comment here..."
-        ></textarea>
-
-        <input type="submit" id="submit" value="Submit" />
+        <div class="row mb-3">
+          <div class="col">
+            <label for="comment" class="form-label">Do you have any comments?</label>
+            <textarea
+              class="form-control"
+              name="comment"
+              id="comment"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+        </div>
+        <div class="row text-center m-5">
+          <div class="col">
+            <input class="btn btn-success" type="submit" id="submit" value="Submit"/>
+          </div>
+        </div>
       </form>
     </div>
 
