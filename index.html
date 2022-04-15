@@ -17,7 +17,7 @@
     <div class="container">
         <!--Start Header-->
       <header>
-        <h1 id="title" class="text-center m-5">Title of the form</h1>
+        <h1 id="title" class="text-center m-4">Title of the form</h1>
         <p id="description" class="mb-5 text-center">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officiis
           pariatur, officia hic vero distinctio dignissimos dolorum blanditiis
@@ -75,24 +75,29 @@
               id="number"
               min="1"
               max="99"
-              placeholder="age"
+              placeholder="Age"
             />
+          </div>
+
+          <div class="col-4"></div>
+
+          <div class="col-6 ">
+            <label class="form-label" for="dropdown">Select a role:</label>
+             <br>
+            <select clas="form-control" name="role" id="dropdown">
+              <option disabled tselected value>Select current role</option>
+              <option value="studet">Student</option>
+              <option value="job">Full Time Job</option>
+              <option value="learner">Full Time Learned</option>1
+              <option value="preferNo">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
           </div>
         </div>
 
         <!--Role-->
 
         <div class="row mt-4 mb-4">
-          <div class="col-6">
-            <select name="role" id="dropdown">
-              <option disabled selected value>Select current role</option>
-              <option value="studet">Student</option>
-              <option value="job">Full Time Job</option>
-              <option value="learner">Full Time Learned</option>
-              <option value="preferNo">Prefer not to say</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
         </div>
 
         <!--Radio and checkboxes-->
