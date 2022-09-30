@@ -9,7 +9,7 @@ Challege of the freecodecamp for the resposive web design certificate
 
 ## Demo
 
-randymz10.github.io/fcc_survey_form/
+[](randymz10.github.io/fcc_survey_form/)
 
 ## Author
 - **GitHub:** [@randymz10](https://github.com/randymz10)
